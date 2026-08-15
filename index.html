@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>তারুণ্য শিবির - নিউজ পোর্টাল</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #222;
+    }
+
+    header {
+      background: #0b5d3b;
+      color: white;
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .breaking {
+      background: #d90429;
+      color: white;
+      padding: 12px 6%;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 88%;
+      max-width: 1200px;
+      margin: 30px auto;
+    }
+
+    .hero {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    .hero h1 {
+      color: #0b5d3b;
+      margin-bottom: 12px;
+      font-size: 32px;
+    }
+
+    .hero p {
+      color: #666;
+      line-height: 1.7;
+    }
+
+    .section-title {
+      margin-bottom: 20px;
+      color: #0b5d3b;
+      border-left: 5px solid #d90429;
+      padding-left: 10px;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .news-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .news-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .news-content {
+      padding: 18px;
+    }
+
+    .news-content h3 {
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .news-content p {
+      color: #666;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 15px;
+      color: #0b5d3b;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 50px;
+      background: #082c1f;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 800px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">তারুণ্য শিবির</div>
+
+    <nav>
+      <a href="#">হোম</a>
+      <a href="#">জাতীয়</a>
+      <a href="#">রাজনীতি</a>
+      <a href="#">খেলা</a>
+      <a href="#">আন্তর্জাতিক</a>
+    </nav>
+  </header>
+
+  <div class="breaking">
+    🔴 ব্রেকিং নিউজ: তারুণ্য শিবিরে আপনাকে স্বাগতম
+  </div>
+
+  <main class="container">
+
+    <section class="hero">
+      <h1>তারুণ্য শিবির</h1>
+      <p>
+        দেশ ও বিশ্বের সর্বশেষ সংবাদ, গুরুত্বপূর্ণ ঘটনা,
+        খেলাধুলা এবং বিভিন্ন актуal খবর একসাথে।
+      </p>
+    </section>
+
+    <h2 class="section-title">সর্বশেষ সংবাদ</h2>
+
+    <section class="news-grid">
+
+      <article class="news-card">
+        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c"
+             alt="সংবাদ">
+        <div class="news-content">
+          <h3>আজকের গুরুত্বপূর্ণ সংবাদ</h3>
+          <p>
+            দেশের বিভিন্ন গুরুত্বপূর্ণ খবর ও সর্বশেষ আপডেট
+            জানতে চোখ রাখুন তারুণ্য শিবিরে।
+          </p>
+          <a href="#" class="read-more">বিস্তারিত পড়ুন →</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="https://images.unsplash.com/photo-1521292270410-a8c4d716d518"
+             alt="বিশ্ব সংবাদ">
+        <div class="news-content">
+          <h3>বিশ্বের সর্বশেষ খবর</h3>
+          <p>
+            আন্তর্জাতিক অঙ্গনের গুরুত্বপূর্ণ ঘটনা ও
+            সর্বশেষ সংবাদ।
+          </p>
+          <a href="#" class="read-more">বিস্তারিত পড়ুন →</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211"
+             alt="খেলা">
+        <div class="news-content">
+          <h3>খেলার সর্বশেষ আপডেট</h3>
+          <p>
+            ক্রিকেট, ফুটবলসহ বিভিন্ন খেলার গুরুত্বপূর্ণ
+            খবর ও আপডেট।
+          </p>
+          <a href="#" class="read-more">বিস্তারিত পড়ুন →</a>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© ২০২৬ তারুণ্য শিবির — সর্বস্বত্ব সংরক্ষিত</p>
+  </footer>
+
+</body>
+</html>
